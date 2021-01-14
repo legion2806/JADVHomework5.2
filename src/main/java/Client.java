@@ -34,7 +34,7 @@ public class Client {
                 Thread.sleep(2000);
 
                 int bytesCount = socketChannel.read(inputBuffer);
-                System.out.println("Обработанная строка:" + new String(inputBuffer.array(),
+                System.out.println("Обработанная строка: " + new String(inputBuffer.array(),
                         0, bytesCount, StandardCharsets.UTF_8));
                 inputBuffer.clear();
             }
